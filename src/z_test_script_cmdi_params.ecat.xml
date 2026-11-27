@@ -1,0 +1,1354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ECAT" serializer_version="v1.0.0">
+ <VERSIONS>
+  <VERSION>
+   <ECSC VERSION="1.5">
+    <ATTRIBUTES>
+     <ETTOOLNAME>ECATT</ETTOOLNAME>
+     <ETOBJ_GNDT>
+      <VERSION>00000001</VERSION>
+      <TWB_TITLE>Command interfaces with parameters, structures and unparameterized</TWB_TITLE>
+      <SOFTCOMP/>
+      <TWB_DEP_RF/>
+      <TWB_DEP_RT/>
+      <TWB_STATUS>X</TWB_STATUS>
+      <TWB_RELE>N</TWB_RELE>
+      <FUSER></FUSER>
+      <FDATE></FDATE>
+      <LUSER></LUSER>
+      <LDATE></LDATE>
+      <LTIME></LTIME>
+      <REL_BAS_F/>
+      <REL_BAS_T/>
+      <SERVICE/>
+      <PVNR/>
+      <BACKUP/>
+     </ETOBJ_GNDT>
+     <ETOBJNOVER>
+      <NAME>Z_TEST_SCRIPT_CMDI_PARAMS</NAME>
+      <TYPE>ECSC</TYPE>
+      <TWB_RESP></TWB_RESP>
+      <TWB_DISTL>B</TWB_DISTL>
+      <TWB_EUBOBJ/>
+      <TWB_EUTYPE/>
+      <DEVCLASS></DEVCLASS>
+      <MASTERLANG>E</MASTERLANG>
+      <TADIR_RESP></TADIR_RESP>
+      <FRANGE>BC-TWB-TST-ECA</FRANGE>
+      <BCSET_MODE/>
+      <API_MODE/>
+      <COL_TSTOBJDATA/>
+      <NO_TRANSLATION/>
+     </ETOBJNOVER>
+     <ETOBJ_DOC>
+      <SEARCH_1/>
+      <SEARCH_2/>
+      <SEARCH_3/>
+      <SEARCH_4/>
+      <SEARCH_5/>
+      <SEARCH_6/>
+      <SEARCH_7/>
+      <SEARCH_8/>
+      <SEARCH_9/>
+      <SEARCH_10/>
+      <S_DOC_ID/>
+      <S_OBJ_ID/>
+      <S_DOC_TITL/>
+     </ETOBJ_DOC>
+     <ETOBJ_CNST>
+      <TWB_DEP_S/>
+      <TWB_DEPV_S/>
+      <TWB_DEP_L/>
+      <TWB_DEPV_L/>
+      <TWB_USE_A/>
+      <TWB_USE_P/>
+      <TWB_USE_H/>
+      <TWB_USE_E/>
+      <REUSE/>
+      <TWB_DEP_C/>
+      <TWB_DEP_VC/>
+      <TWB_DEP_F/>
+      <TWB_DEP_VF/>
+      <TWB_DEP_P/>
+      <TWB_DEP_VP/>
+      <TWB_DEP_DB/>
+      <TWB_DEPVDB/>
+      <TWB_WKREQ>0.0</TWB_WKREQ>
+      <TWB_WKUNIT>MIN</TWB_WKUNIT>
+      <TWB_PRIO>3</TWB_PRIO>
+     </ETOBJ_CNST>
+     <ETSC_TSYS>
+      <SYSTEMDATA/>
+      <TESTSYSTEM/>
+     </ETSC_TSYS>
+     <ETSYS_COMP_TABTYPE/>
+     <ETSYS_REL_TABTYPE/>
+     <ETBF_OBJ_TABTYPE/>
+     <ETBF_VER_TABTYPE/>
+     <ETSCR_SUT_MD_TT/>
+    </ATTRIBUTES>
+    <SCRIPT>
+     <ETXML_LINE_TABTYPE>
+      <item> FUN ( CONVERSION_EXIT_ALPHA_INPUT , CONVERSION_EXIT_ALPHA_INPU_2 ).</item>
+      <item> FUN ( CONVERSION_EXIT_ALPHA_INPUT , CONVERSION_EXIT_ALPHA_INPU_1 ).</item>
+      <item> FUN ( SPELL_AMOUNT , SPELL_AMOUNT_1 ).</item>
+     </ETXML_LINE_TABTYPE>
+    </SCRIPT>
+    <PARAMETERS>
+     <ETPAR_GUIX>
+      <item>
+       <PNAME>I_CURRENCY</PNAME>
+       <PTYP>I</PTYP>
+       <PDESC>Currency for Amounts, Blank for Numbers</PDESC>
+       <PINDEX>0008</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_I_01</PGROUP>
+       <PREF_TYPE>_CBTSIM_</PREF_TYPE>
+       <PREF_NAME>SYST-WAERS</PREF_NAME>
+       <PDOM>SYCUKY</PDOM>
+       <PDATTYP>CUKY</PDATTYP>
+       <PDATLEN>0005</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000010</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0001</SORT_LNR>
+       <PREF_NAME2>SYST-WAERS</PREF_NAME2>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>SPELL_AMOUNT_1</PNAME>
+       <PTYP>X</PTYP>
+       <PDESC>Spell Out Numbers</PDESC>
+       <PINDEX>0012</PINDEX>
+       <PGROUP>FUN</PGROUP>
+       <XMLREF_TYP>F</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>SPELL_AMOUNT</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0001</SORT_LNR>
+       <PREF_NAME2>SPELL_AMOUNT</PREF_NAME2>
+       <VALUE>&lt;VALUE&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/rfc" version="1.0">
+         <xsd:element name="SPELL_AMOUNT">
+          <xsd:complexType>
+           <xsd:sequence>
+            <xsd:element name="IMPORTING">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="AMOUNT" default="0">
+                <xsd:annotation>
+                 <xsd:documentation>I=I=O=X=C==K==D==A=A=L==doc=Amount/Number to Be Spelled Out</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+               <xsd:element name="CURRENCY" minOccurs="0" default="SPACE">
+                <xsd:annotation>
+                 <xsd:documentation>I=I=O=X=C==K==D=SYST-WAERS=A=C=L=000005=doc=Currency for Amounts, Blank for Numbers</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="5"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="FILLER" default="SPACE">
+                <xsd:annotation>
+                 <xsd:documentation>I=I=O=X=C==K==D==A=A=L==doc=Filler for Padding the Output Field</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+               <xsd:element name="LANGUAGE" minOccurs="0">
+                <xsd:annotation>
+                 <xsd:documentation>I=I=O=X=C==K==D=SYST-LANGU=A=C=L=000001=doc=Language Indicator</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="1"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="EXPORTING">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="IN_WORDS" minOccurs="0" type="SPELL">
+                <xsd:annotation>
+                 <xsd:documentation>I=E=O==C=S=K==D=SPELL=A=u=L=000000=doc=Character String with Amount/Number Spelled Out</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+           </xsd:sequence>
+          </xsd:complexType>
+         </xsd:element>
+         <xsd:complexType name="SPELL">
+          <xsd:annotation>
+           <xsd:documentation>I==O==C=S=K==D=SPELL=A=u=L=000000=doc=Transfer structure for</xsd:documentation>
+          </xsd:annotation>
+          <xsd:sequence>
+           <xsd:element name="NUMBER" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=IN_NUMBERS=A=N=L=000015=doc=Whole digits of th</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:pattern value="\d+"/>
+              <xsd:maxLength value="15"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DECIMAL" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=IN_DECI=A=N=L=000003=doc=Decimal places of the</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:pattern value="\d+"/>
+              <xsd:maxLength value="3"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="CURRDEC" minOccurs="0" type="xsd:unsignedByte">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C=D=K==D=CURRDEC=A=b=L=000003=doc=Number of decimal pl</xsd:documentation>
+            </xsd:annotation>
+           </xsd:element>
+           <xsd:element name="WORD" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=IN_WORDS=A=C=L=000255=doc=Amount in words</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="255"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DECWORD" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DECWORD=A=C=L=000128=doc=Decimal places in wor</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="128"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG01" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG02" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG03" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG04" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG05" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG06" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG07" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG08" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG09" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG10" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG11" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG12" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG13" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG14" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIG15" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="7"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL01" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL02" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL03" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL04" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL05" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL06" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL07" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL08" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL09" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL10" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL11" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL12" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL13" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL14" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+           <xsd:element name="DIL15" minOccurs="0">
+            <xsd:annotation>
+             <xsd:documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="25"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+           </xsd:element>
+          </xsd:sequence>
+         </xsd:complexType>
+         <xsd:element name="Exception">
+          <xsd:complexType>
+           <xsd:sequence>
+            <xsd:element name="Name">
+             <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+               <xsd:enumeration value="NOT_FOUND">
+                <xsd:annotation>
+                 <xsd:documentation>I=X=O==C==K==D==A==L==doc=Argument Not Found in T015Z</xsd:documentation>
+                </xsd:annotation>
+               </xsd:enumeration>
+               <xsd:enumeration value="TOO_LARGE">
+                <xsd:annotation>
+                 <xsd:documentation>I=X=O==C==K==D==A==L==doc=Amount Too Large to Be Spelled Out</xsd:documentation>
+                </xsd:annotation>
+               </xsd:enumeration>
+              </xsd:restriction>
+             </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Message" minOccurs="0">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="ID">
+                <xsd:annotation>
+                 <xsd:documentation>I==O==C==K==D=SYST_MSGID=A=C=L=000020=doc=ABAP System Field:</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="20"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="Number">
+                <xsd:annotation>
+                 <xsd:documentation>I==O==C==K==D=SYST_MSGNO=A=N=L=000003=doc=ABAP System Field:</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:pattern value="\d+"/>
+                  <xsd:maxLength value="3"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="Text" minOccurs="0" type="xsd:string"/>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Attributes" minOccurs="0">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="V1" minOccurs="0">
+                <xsd:annotation>
+                 <xsd:documentation>I==O==C==K==D=SYST_MSGV=A=C=L=000050=doc=ABAP System Field:</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="50"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="V2" minOccurs="0">
+                <xsd:annotation>
+                 <xsd:documentation>I==O==C==K==D=SYST_MSGV=A=C=L=000050=doc=ABAP System Field:</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="50"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="V3" minOccurs="0">
+                <xsd:annotation>
+                 <xsd:documentation>I==O==C==K==D=SYST_MSGV=A=C=L=000050=doc=ABAP System Field:</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="50"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+               <xsd:element name="V4" minOccurs="0">
+                <xsd:annotation>
+                 <xsd:documentation>I==O==C==K==D=SYST_MSGV=A=C=L=000050=doc=ABAP System Field:</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                 <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="50"/>
+                 </xsd:restriction>
+                </xsd:simpleType>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+           </xsd:sequence>
+          </xsd:complexType>
+         </xsd:element>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <rfc:SPELL_AMOUNT xmlns:rfc="http://xml.sap.com/2003/05/eCATT/rfc">
+         <IMPORTING>
+          <AMOUNT>
+           <valueRefName>I_AMOUNT</valueRefName>
+           X
+          </AMOUNT>
+          <CURRENCY>
+           <valueRefName>I_CURRENCY</valueRefName>
+           X
+          </CURRENCY>
+          <FILLER>
+           <valueRefName>I_FILLER</valueRefName>
+           X
+          </FILLER>
+          <LANGUAGE>
+           <valueRefName>I_LANGUAGE</valueRefName>
+           X
+          </LANGUAGE>
+         </IMPORTING>
+         <EXPORTING>
+          <IN_WORDS>
+           <NUMBER/>
+           <DECIMAL/>
+           <CURRDEC/>
+           <WORD/>
+           <DECWORD/>
+           <DIG01/>
+           <DIG02/>
+           <DIG03/>
+           <DIG04/>
+           <DIG05/>
+           <DIG06/>
+           <DIG07/>
+           <DIG08/>
+           <DIG09/>
+           <DIG10/>
+           <DIG11/>
+           <DIG12/>
+           <DIG13/>
+           <DIG14/>
+           <DIG15/>
+           <DIL01/>
+           <DIL02/>
+           <DIL03/>
+           <DIL04/>
+           <DIL05/>
+           <DIL06/>
+           <DIL07/>
+           <DIL08/>
+           <DIL09/>
+           <DIL10/>
+           <DIL11/>
+           <DIL12/>
+           <DIL13/>
+           <DIL14/>
+           <DIL15/>
+           <valueRefName>ES_IN_WORDS</valueRefName>
+          </IN_WORDS>
+         </EXPORTING>
+         <Exception>
+          <rfc:NOT_FOUND>
+           <valueRefName>E_NOT_FOUND</valueRefName>
+           X
+          </rfc:NOT_FOUND>
+          <rfc:TOO_LARGE>
+           <valueRefName>E_TOO_LARGE</valueRefName>
+           X
+          </rfc:TOO_LARGE>
+         </Exception>
+        </rfc:SPELL_AMOUNT>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>I_LANGUAGE</PNAME>
+       <PTYP>I</PTYP>
+       <PDESC>Language Indicator</PDESC>
+       <PINDEX>0011</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_I_02</PGROUP>
+       <PREF_TYPE>_CBTSIM_</PREF_TYPE>
+       <PREF_NAME>SYST-LANGU</PREF_NAME>
+       <PDOM>SYLANGU</PDOM>
+       <PDATTYP>LANG</PDATTYP>
+       <PDATLEN>0001</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000002</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0002</SORT_LNR>
+       <PREF_NAME2>SYST-LANGU</PREF_NAME2>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>CONVERSION_EXIT_ALPHA_INPU_1</PNAME>
+       <PTYP>X</PTYP>
+       <PDESC>Conversion exit ALPHA, external-&gt;internal</PDESC>
+       <PINDEX>0001</PINDEX>
+       <PGROUP>FUN</PGROUP>
+       <XMLREF_TYP>F</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>CONVERSION_EXIT_ALPHA_INPUT</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0002</SORT_LNR>
+       <PREF_NAME2>CONVERSION_EXIT_ALPHA_INPUT</PREF_NAME2>
+       <VALUE>&lt;VALUE&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/rfc" version="1.0">
+         <xsd:element name="CONVERSION_EXIT_ALPHA_INPUT">
+          <xsd:complexType>
+           <sequence>
+            <xsd:element name="IMPORTING">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="INPUT">
+                <xsd:annotation>
+                 <xsd:documentation>I=I=O==C==K==D==A=B=L==doc=C field</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="EXPORTING">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="OUTPUT">
+                <xsd:annotation>
+                 <xsd:documentation>I=E=O==C==K==D==A=B=L==doc=Internal display of INPUT, any category</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+           </sequence>
+          </xsd:complexType>
+         </xsd:element>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <rfc:CONVERSION_EXIT_ALPHA_INPUT xmlns:rfc="http://xml.sap.com/2003/05/eCATT/rfc">
+         <IMPORTING>
+          <INPUT>
+           <valueRefName>I_INPUT</valueRefName>
+           X
+          </INPUT>
+         </IMPORTING>
+         <EXPORTING>
+          <OUTPUT>
+           <valueRefName>E_OUTPUT</valueRefName>
+           X
+          </OUTPUT>
+         </EXPORTING>
+        </rfc:CONVERSION_EXIT_ALPHA_INPUT>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>I_AMOUNT</PNAME>
+       <PTYP>I</PTYP>
+       <PDESC>Amount/Number to Be Spelled Out</PDESC>
+       <PINDEX>0007</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_I_04</PGROUP>
+       <PDATLEN>0128</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000128</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0003</SORT_LNR>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>CONVERSION_EXIT_ALPHA_INPU_2</PNAME>
+       <PTYP>X</PTYP>
+       <PDESC>Conversion exit ALPHA, external-&gt;internal</PDESC>
+       <PINDEX>0002</PINDEX>
+       <PGROUP>FUN</PGROUP>
+       <XMLREF_TYP>F</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>CONVERSION_EXIT_ALPHA_INPUT</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0003</SORT_LNR>
+       <PREF_NAME2>CONVERSION_EXIT_ALPHA_INPUT</PREF_NAME2>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/rfc" version="1.0">
+         <xsd:element name="CONVERSION_EXIT_ALPHA_INPUT">
+          <xsd:complexType>
+           <sequence>
+            <xsd:element name="IMPORTING">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="INPUT">
+                <xsd:annotation>
+                 <xsd:documentation>I=I=O==C==K==D==A=B=L==doc=C field</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="EXPORTING">
+             <xsd:complexType>
+              <xsd:sequence>
+               <xsd:element name="OUTPUT">
+                <xsd:annotation>
+                 <xsd:documentation>I=E=O==C==K==D==A=B=L==doc=Internal display of INPUT, any category</xsd:documentation>
+                </xsd:annotation>
+               </xsd:element>
+              </xsd:sequence>
+             </xsd:complexType>
+            </xsd:element>
+           </sequence>
+          </xsd:complexType>
+         </xsd:element>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <rfc:CONVERSION_EXIT_ALPHA_INPUT xmlns:rfc="http://xml.sap.com/2003/05/eCATT/rfc">
+         <IMPORTING>
+          <INPUT/>
+         </IMPORTING>
+         <EXPORTING>
+          <OUTPUT/>
+         </EXPORTING>
+        </rfc:CONVERSION_EXIT_ALPHA_INPUT>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>I_FILLER</PNAME>
+       <PTYP>I</PTYP>
+       <PDESC>Filler for Padding the Output Field</PDESC>
+       <PINDEX>0009</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_I_05</PGROUP>
+       <PDATLEN>0128</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000128</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0004</SORT_LNR>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>ES_IN_WORDS</PNAME>
+       <PTYP>E</PTYP>
+       <PDESC>Character String with Amount/Number Spelled Out</PDESC>
+       <PINDEX>0003</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_X_03</PGROUP>
+       <XMLREF_TYP>D</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>SPELL</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0005</SORT_LNR>
+       <PREF_NAME2>SPELL</PREF_NAME2>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="SPELL">
+          <annotation>
+           <documentation>I==O==C=S=K==D=SPELL=A=u=L=000000=doc=Transfer structure for amounts rendered in words</documentation>
+          </annotation>
+          <sequence>
+           <element name="NUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=IN_NUMBERS=A=N=L=000015=doc=Whole digits of th</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="15"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DECIMAL" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=IN_DECI=A=N=L=000003=doc=Decimal places of the</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CURRDEC" minOccurs="0" type="unsignedByte">
+            <annotation>
+             <documentation>I==O==C=D=K==D=CURRDEC=A=b=L=000003=doc=Number of decimal pl</documentation>
+            </annotation>
+           </element>
+           <element name="WORD" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=IN_WORDS=A=C=L=000255=doc=Amount in words</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="255"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DECWORD" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DECWORD=A=C=L=000128=doc=Decimal places in wor</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="128"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG01" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG02" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG03" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG04" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG05" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG06" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG07" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG08" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG09" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG10" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG11" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG12" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG13" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG14" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIG15" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT=A=C=L=000007=doc=Figure in words (units</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL01" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL02" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL03" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL04" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL05" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL06" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL07" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL08" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL09" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL10" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL11" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL12" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL13" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL14" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DIL15" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DZWORT_L=A=C=L=000025=doc=Figure in Words (one</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:SPELL xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+         <NUMBER/>
+         <DECIMAL/>
+         <CURRDEC/>
+         <WORD/>
+         <DECWORD/>
+         <DIG01/>
+         <DIG02/>
+         <DIG03/>
+         <DIG04/>
+         <DIG05/>
+         <DIG06/>
+         <DIG07/>
+         <DIG08/>
+         <DIG09/>
+         <DIG10/>
+         <DIG11/>
+         <DIG12/>
+         <DIG13/>
+         <DIG14/>
+         <DIG15/>
+         <DIL01/>
+         <DIL02/>
+         <DIL03/>
+         <DIL04/>
+         <DIL05/>
+         <DIL06/>
+         <DIL07/>
+         <DIL08/>
+         <DIL09/>
+         <DIL10/>
+         <DIL11/>
+         <DIL12/>
+         <DIL13/>
+         <DIL14/>
+         <DIL15/>
+        </ddic:SPELL>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>E_NOT_FOUND</PNAME>
+       <PTYP>E</PTYP>
+       <PDESC>Argument Not Found in T015Z</PDESC>
+       <PINDEX>0004</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_X_06</PGROUP>
+       <PDATLEN>0128</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000128</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0006</SORT_LNR>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>E_TOO_LARGE</PNAME>
+       <PTYP>E</PTYP>
+       <PDESC>Amount Too Large to Be Spelled Out</PDESC>
+       <PINDEX>0006</PINDEX>
+       <PGROUP>SPELL_AMOUNT_1_X_07</PGROUP>
+       <PDATLEN>0128</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000128</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0007</SORT_LNR>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>I_INPUT</PNAME>
+       <PTYP>I</PTYP>
+       <PDESC>C field</PDESC>
+       <PINDEX>0010</PINDEX>
+       <PGROUP>CONVERSION_EXIT_ALPHU_1_I_01</PGROUP>
+       <PDATLEN>0128</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000128</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0008</SORT_LNR>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+      <item>
+       <PNAME>E_OUTPUT</PNAME>
+       <PTYP>E</PTYP>
+       <PDESC>Internal display of INPUT, any category</PDESC>
+       <PINDEX>0005</PINDEX>
+       <PGROUP>CONVERSION_EXIT_ALPHU_1_X_02</PGROUP>
+       <PDATLEN>0128</PDATLEN>
+       <PINTTYP>C</PINTTYP>
+       <PINTLEN>000128</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0009</SORT_LNR>
+       <TAB_INDEX>0</TAB_INDEX>
+      </item>
+     </ETPAR_GUIX>
+    </PARAMETERS>
+   </ECSC>
+  </VERSION>
+ </VERSIONS>
+</abapGit>
